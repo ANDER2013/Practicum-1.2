@@ -1,0 +1,79 @@
+DIAGNÓSTICO DEL DATASET — AMIE MINEDUC 2023-2024
+=======================================================
+
+DIMENSIONES
+  Filas   : 442,716
+  Columnas: 27
+
+COLUMNAS ORIGINALES
+   1. Anio_lectivo
+   2. Zona
+   3. Provincia
+   4. Cod_Provincia
+   5. Canton
+   6. Cod_Canton
+   7. Parroquia
+   8. Cod_Parroquia
+   9. Nombre_Institucion
+  10. AMIE
+  11. Tipo_Educacion
+  12. Sostenimiento
+  13. Area
+  14. Regimen_Escolar
+  15. Jurisdiccion
+  16. Docentes_Femenino
+  17. Docentes_Masculino
+  18. Total_Docentes
+  19. Estudiantes_Femenino
+  20. Estudiantes_Masculino
+  21. Total_Estudiantes
+  22. Ecuatoriana
+  23. Colombiana
+  24. Venezolana
+  25. Peruana
+  26. Otros_Paises_de_America
+  27. Otros_Continentes
+
+VALORES NULOS POR COLUMNA
+  Anio_lectivo                        120,114 (27.1%)
+  Zona                                120,114 (27.1%)
+  Provincia                           120,114 (27.1%)
+  Cod_Provincia                       120,114 (27.1%)
+  Canton                              120,114 (27.1%)
+  Cod_Canton                          120,114 (27.1%)
+  Parroquia                           120,114 (27.1%)
+  Cod_Parroquia                       120,114 (27.1%)
+  Nombre_Institucion                  120,114 (27.1%)
+  AMIE                                120,114 (27.1%)
+  Tipo_Educacion                      120,114 (27.1%)
+  Sostenimiento                       120,114 (27.1%)
+  Area                                120,114 (27.1%)
+  Regimen_Escolar                     120,114 (27.1%)
+  Jurisdiccion                        120,114 (27.1%)
+  Docentes_Femenino                   120,114 (27.1%)
+  Docentes_Masculino                  120,114 (27.1%)
+  Total_Docentes                      120,114 (27.1%)
+  Estudiantes_Femenino                120,114 (27.1%)
+  Estudiantes_Masculino               120,114 (27.1%)
+  Total_Estudiantes                   120,114 (27.1%)
+  Ecuatoriana                         120,114 (27.1%)
+  Colombiana                          120,114 (27.1%)
+  Venezolana                          120,114 (27.1%)
+  Peruana                             120,114 (27.1%)
+  Otros_Paises_de_America             120,114 (27.1%)
+  Otros_Continentes                   120,114 (27.1%)
+
+DISTRIBUCIÓN — SOSTENIMIENTO
+  Fiscal                    240,571
+  Particular                66,233
+  Fiscomisional             12,551
+  Municipal                  3,247
+
+DISTRIBUCIÓN — NIVEL EDUCATIVO
+  Ordinario                 306,276
+  Popular Permanente        13,959
+  Educación Especial         2,367
+
+DISTRIBUCIÓN — ÁREA
+  Urbana                    179,427
+  Rural                     143,175
