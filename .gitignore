@@ -1,0 +1,29 @@
+# Archivos pesados / generados (NO subir)
+datos_macroentorno/bronze/SUPERCIAS/sql/*.sql
+datos_macroentorno/rpa_db/
+datos_macroentorno/gold/*.db
+*.db
+datos_macroentorno/rpa_silver/rpa_supercias.csv
+datos_macroentorno/silver/supercias.csv
+datos_macroentorno/silver_pruebas/supercias.csv
+
+# Backups y pruebas intermedias
+datos_macroentorno/silver_backup/
+datos_macroentorno/silver_pruebas/
+tmp_cuarentena/
+*.bak
+
+# Logs
+datos_macroentorno/rpa_logs/
+datos_macroentorno/logs/
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Entorno
+.env

@@ -1,0 +1,112 @@
+Listado de rutas de carpetas
+El n·mero de serie del volumen es 000000E9 02CB:7497
+C:.
+ª   .gitignore
+ª   pipeline.py
+ª   README.md
+ª   requirements.txt
+ª   
++---base_de_datos
+ª   +---backups
++---codigo_fuente
+ª   +---load
+ª   +---notebooks
+ª   +---sql
+ª   +---transform
+ª       ª   bce.py
+ª       ª   common.py
+ª       ª   __init__.py
+ª       ª   
+ª       +---__pycache__
+ª               bce.cpython-313.pyc
+ª               common.cpython-313.pyc
+ª               __init__.cpython-313.pyc
+ª               
++---dashboard
+ª   +---exportaciones
+ª   +---imagenes
++---datos_macroentorno
+ª   +---bronze
+ª   ª   +---BCE
+ª   ª   ª   +---csv
+ª   ª   ª   ª       iee.csv.bak
+ª   ª   ª   ª       Indicadores.csv.bak
+ª   ª   ª   ª       indicadores_diarios.csv.bak
+ª   ª   ª   ª       pib.csv.bak
+ª   ª   ª   ª       vab.csv.bak
+ª   ª   ª   ª       
+ª   ª   ª   +---excels
+ª   ª   ª           Companias.xlsx
+ª   ª   ª           IEE.xlsx
+ª   ª   ª           Petroleo.xlsx
+ª   ª   ª           PIB.xlsx
+ª   ª   ª           Riesgos_del_pais.xlsx
+ª   ª   ª           VAB 2018-2023.xlsx
+ª   ª   ª           
+ª   ª   +---INEC
+ª   ª   ª   +---csv
+ª   ª   ª   +---excels
+ª   ª   +---MINEDUC
+ª   ª   ª   +---csv
+ª   ª   ª   ª       mineduc.csv.bak
+ª   ª   ª   ª       
+ª   ª   ª   +---excels
+ª   ª   ª           mineduc_historico.xlsx
+ª   ª   ª           
+ª   ª   +---RPA
+ª   ª   +---SUPERCIAS
+ª   ª       +---csv
+ª   ª       +---sql
+ª   ª               tab_consolidado_export.sql
+ª   ª               tab_consolidado_supercias.sql
+ª   ª               
+ª   +---gold
+ª   +---silver
+ª   ª       iee_old.csv
+ª   ª       pib_old.csv
+ª   ª       vab_old.csv
+ª   ª       
+ª   +---silver_backup
+ª   ª       iee_old.csv
+ª   ª       pib_old.csv
+ª   ª       vab_old.csv
+ª   ª       
+ª   +---silver_pruebas
+ª           iee.csv
+ª           indicadores_mercado.csv
+ª           pib.csv
+ª           vab.csv
+ª           
++---documentacion
+    +---articulo
+    ª   +---estado_del_arte
+    ª   +---version_final
+    +---capturas_presentacion
+    ª   +---01_problema
+    ª   +---02_arquitectura
+    ª   ª       01_estructura_transform.png
+    ª   ª       arbol_proyecto.txt
+    ª   ª       backup_silver.png
+    ª   ª       estructura_completa_archivos.png
+    ª   ª       estructura_general_proyecto.png
+    ª   ª       
+    ª   +---03_bronze
+    ª   ª       05_archivos_bronze_excels.png
+    ª   ª       
+    ª   +---04_silver
+    ª   ª       02_common_py.png
+    ª   ª       03_bce_imports.png
+    ª   ª       06_backup_produccion.png
+    ª   ª       07_ejecucion_bce.png
+    ª   ª       08_archivos_silver_generados.png
+    ª   ª       09_preview_pib.png
+    ª   ª       10_preview_iee.png
+    ª   ª       11_comparacion_filas.png
+    ª   ª       
+    ª   +---05_sql
+    ª   +---06_rpa
+    ª   +---07_dashboard
+    ª   +---08_demo_final
+    +---diagrama_arquitectura
+    +---informe_tecnico
+    +---presentaciones
