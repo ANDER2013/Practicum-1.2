@@ -1,12 +1,15 @@
 # Practicum 1.2 - Reto Final: Macroentorno Economico Ecuador
 
-Pipeline automatizado (RPA) de extraccion, transformacion, carga y analisis de datos del macroentorno economico del Ecuador. Integra fuentes oficiales del **Banco Central del Ecuador (BCE)**, **Ministerio de Educacion (MINEDUC)** y **Superintendencia de Companias, Valores y Seguros (SUPERCIAS)**.
+Pipeline automatizado (RPA) de extraccion, transformacion, carga y analisis de datos del macroentorno economico del Ecuador. Integra fuentes oficiales del Banco Central del Ecuador (BCE), Ministerio de Educacion (MINEDUC) y Superintendencia de Companias, Valores y Seguros (SUPERCIAS).
 
 ## Descripcion
 
 El proyecto construye un flujo de datos por capas (arquitectura Bronze-Silver-Gold) que automatiza la limpieza, normalizacion, consolidacion y generacion de reportes analiticos a partir de archivos crudos entregados por las instituciones fuente.
 
 ## Arquitectura del pipeline
+
+Bronze (datos crudos .xlsx) -> Silver (datos limpios .csv) -> SQLite (base consolidada) -> Reportes (CSV finales)
+
 ## Fuentes de datos
 
 | Fuente | Archivos procesados | Contenido |
@@ -16,12 +19,24 @@ El proyecto construye un flujo de datos por capas (arquitectura Bronze-Silver-Go
 | SUPERCIAS | Directorio de companias | Empresas registradas por provincia (217,000+ registros) |
 
 ## Estructura del proyecto
+
+- pipeline.py : Punto de entrada unico del proyecto
+- requirements.txt
+- codigo_fuente/transform/bce.py : Procesa PIB, VAB, IEE, Petroleo, Riesgo Pais
+- codigo_fuente/transform/mineduc.py : Procesa datos educativos
+- codigo_fuente/transform/supercias.py : Procesa directorio de companias
+- codigo_fuente/transform/common.py : Funciones compartidas de limpieza
+- datos_macroentorno/bronze/ : Datos originales por fuente
+- datos_macroentorno/rpa/rpa_macroentorno.py : Logica completa del pipeline RPA
+- datos_macroentorno/rpa_silver/ : CSV limpios generados
+- datos_macroentorno/rpa_db/ : Base de datos SQLite consolidada (no versionada)
+- datos_macroentorno/rpa_reportes/ : Reportes analiticos finales
+- documentacion/capturas_presentacion/ : Evidencia del proceso de desarrollo
+
 ## Instalacion y ejecucion
 
-```bash
-pip install -r requirements.txt
-python pipeline.py
-```
+Instalar dependencias: pip install -r requirements.txt
+Ejecutar el pipeline: python pipeline.py
 
 El pipeline ejecuta automaticamente 6 etapas:
 
@@ -45,9 +60,9 @@ El pipeline ejecuta automaticamente 6 etapas:
 
 Los reportes se consumen desde un dashboard de Power BI organizado en tres paginas:
 
-- **P1 - Panorama Macroeconomico**: PIB, IEE, Petroleo, Riesgo Pais
-- **P2 - Analisis Provincial**: VAB, empresas y estudiantes por provincia
-- **P3 - Perfil Provincial**: vista integrada por provincia seleccionada
+- P1 - Panorama Macroeconomico: PIB, IEE, Petroleo, Riesgo Pais
+- P2 - Analisis Provincial: VAB, empresas y estudiantes por provincia
+- P3 - Perfil Provincial: vista integrada por provincia seleccionada
 
 ## Requisitos
 
@@ -57,4 +72,4 @@ Los reportes se consumen desde un dashboard de Power BI organizado en tres pagin
 
 ## Notas
 
-Los archivos SQL originales de SUPERCIAS (>2GB) y las bases de datos generadas no se incluyen en el repositorio por su tamano; se generan automaticamente al ejecutar el pipeline.
+Los archivos SQL originales de SUPERCIAS (mayores a 2GB) y las bases de datos generadas no se incluyen en el repositorio por su tamano; se generan automaticamente al ejecutar el pipeline.
