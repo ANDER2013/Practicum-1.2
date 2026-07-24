@@ -1,6 +1,6 @@
 # =============================================================================
 # RPA MACROENTORNO ECONÓMICO - PROCESO AUTOMATIZADO
-# Creado por: RPA Automatizado
+# RPA 
 # Descripción: Extrae, transforma y carga datos del macroentorno económico
 # Ubicación de este script: datos_macroentorno/rpa/rpa_macroentorno.py
 #   (por eso todas las rutas usan "../" para subir al nivel de datos_macroentorno)
@@ -648,3 +648,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Fuerza que el directorio de trabajo sea siempre la carpeta donde vive este script
+os.chdir(os.path.dirname(os.path.abspath(__file__)))

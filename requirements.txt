@@ -1,0 +1,7 @@
+pandas>=2.0.0
+openpyxl>=3.1.0
+# Solo una vez, al configurar el proyecto:
+pip install -r requirements.txt
+
+# Cada vez que quieras correr el pipeline:
+python datos_macroentorno/rpa/rpa_macroentorno.py
